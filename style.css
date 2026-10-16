@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: font-size 3s ease;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: width 3s ease 1s,
+                background-color 4s ease 1s;
+}
+
+input:focus {
+    width: 300px;
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 1001px) and (min-height: 901px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    label {
+        display: inline-block;
+    }
+
+    input {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    label {
+        display: block;
+        width: auto;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
